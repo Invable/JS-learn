@@ -1,0 +1,43 @@
+
+.menu {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    font-size: 24px;
+    line-height: 24px;
+    border-bottom: 4px solid #e9e6e4;
+}
+a   {
+    text-decoration: none;
+    color: #313130;
+}
+li {
+    list-style: none;
+    
+}
+li::before {
+    counter-reset: list1;
+    counter-reset: list2;
+    counter-increment: list1;
+    counter-increment: list2;
+    content: counter(list1) "." counter(list2) "  "; 
+}
+
+h1 {
+    text-align: center;
+    color: #313130;
+}
+.chapter {
+    margin: 0 auto;
+    width: 45%;
+}
+.title {
+    font-size: 24px;
+    text-align: left;
+    font-weight: 900;
+}
+.page {
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 300;
+}
